@@ -4,6 +4,15 @@ using namespace std;
 int main()
 {
      int A[]={1,3,4,5,5};
+     cout <<*A<<endl;
+
+
+
+    //  cout<<*A<<endl;
+    //  cout<<&A<<endl;
+    //  cout<<&A[0]<<endl;
+
+
 
     // cout<<A<<endl;
     // cout<<&A[0]<<endl;
@@ -16,7 +25,6 @@ int main()
         cout<<&A[i]<<endl;
         cout<<A[i]<<endl;
         cout<<*(A+i)<<endl;
-
     }
     
 

@@ -1,0 +1,1 @@
+            cout<<array[i][j];
