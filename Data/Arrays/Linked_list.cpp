@@ -15,7 +15,7 @@ void print_List(Node* n)
 {
     while(n!=NULL)
     {
-        cout<<n->data<<"";
+        cout<<n->data<<"  ";
         n=n->next;
 
     }
