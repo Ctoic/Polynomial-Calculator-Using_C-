@@ -21,7 +21,84 @@ void print_List(Node* n)
     }
 }
 
+/// inserting an element at the starting of the list
+void push(Node** head_ref, int new_data)
+{
+    // allocating a new memory block
+    Node* new_node= new Node();
 
+    // Put in data you want 
+    new_node->data= new_data;
+
+    // making next as  the new node as head 
+    new_node-> next= (*head_ref);
+
+    // Move the head point to the new node
+    (*head_ref)= new_node;
+
+
+}
+// ADDING A NODE AFTERA A NODE INSERTIONS
+
+void insert_After(Node* prev_node,int new_data)
+{
+        if (prev_node==NULL)
+{
+    cout<<"The Given Node Cannot be NULL::"<<endl;
+    return ;
+
+
+
+}
+    // allocate new node
+    Node* new_node = new Node();
+    // put in the data 
+    new_node-> data = new_data;
+    // make next of newpointer as newxt of pprevious pointer
+    new_node->next= prev_node->next;
+    // move the next of previous Node as bew node
+    prev_node->next = new_node;
+
+
+
+}
+//ADDING A NODE AT THE END OF LINKED LIST
+// adding a node at the last of given linked list
+// we add items at the end of linked list
+void append(Node** head_ref,int new_data)
+{
+    //Allocating the Node ,chunk of memeory
+    Node* new_node = new Node();
+    // what the freak i didn't ggot it why this behaiour
+    Node* last = *head_ref;
+    // put in the data 
+    new_node->data = new_data;
+
+    //this new node is going to be 
+    //last node so make next od it as null
+
+    new_node->next = NULL;
+
+    // If Linked list is Empty make new node as head
+    if(*head_ref== NULL)
+    {
+        *head_ref  = new_node;
+        return ;
+    }
+
+    // Else traverse till the last Node 
+    //complexity of time is O(n) when lst not empty
+    while ( last-> next != NULL)
+    {
+        last = last->next;
+
+    }
+    // Changee the nexxt last Node
+    last->next = new_node;
+    return ;
+    
+
+}
 
 int main()
 {
@@ -50,14 +127,8 @@ int main()
     head -> next=NULL;
 
     // Traversing the link list 
-
-
-
-
     print_List(head);
-
-
-
+    // Adding a node at the front of list
 
 
 
