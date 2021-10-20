@@ -73,12 +73,13 @@ void print(Node* node)
 {
     while (node!=NULL)
     {
-        cout<<node->data<<" ";
+        cout<<node->data<<" "; // Done with it 
         node=node->next;
 
     }
 
 }
+
 
 int main()
 {
