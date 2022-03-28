@@ -4,7 +4,7 @@ In this repository i will add all the basic problems and best solutins interms o
 minimum time complexity and it should occupy less space. We have to take good care of time factor because time is precious.
 Code Along with baisic concepts and I will also add the lecture notes and my personal notes.
 
-#Assignment003
+# Assignment003
 Polynomail Calculator was our Data structures assignment where we implemented our knowledge of linked list to make it possible. Using a singly Linked List
 we developed the calculator ,main concepts were Operator overloading ,insertion ,deletion , sorting the poly and Operation with polynomial like add and multiply.
 
